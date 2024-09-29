@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex gap-6 items-center justify-center w-full h-screen bg-sky-200">
+    
+   <div class="w-[320px] shadow-md rounded shadow-blue-300 bg-white border border-slate-500 flex flex-col items-center justify-center gap-2 px-4 py-3">
+    <h1 class="text-2xl font-bold  text-center mb-5">Area de un triangulo</h1>
+    <label for="base">Inserte la base</label>
+    <input type="text" autofocus id="base" placeholder="Escriba la base" class="w-full border border-gray-500 outline-none p-2">
+    <label for="altura">Inserte la altura</label>
+    <input type="text" id="altura" placeholder="Escriba la altura" class="w-full border border-gray-500 outline-none  p-2 ">
+    <div class="flex items-center justify-center gap-2 h-10">
+        <p>El resultado es: </p>
+        <span id="resultado" class="text-3xl font-medium text-green-500"></span>
+    </div>
+    <button id="btnArea" class="px-5 py-2 bg-blue-500 border-none text-white rounded-md">Calcular</button>
+   </div>
+
+   <div class="w-[320px] shadow-md rounded shadow-blue-300 bg-white border border-slate-500 flex flex-col items-center justify-center gap-2 px-4 py-3">
+    <h1 class="text-2xl font-bold  text-center mb-5">Registro de usuario</h1>
+    <label for="nombre">Inserte el nombre</label>
+    <input type="text" autofocus id="nombre" placeholder="Escriba el nombre" class="w-full border border-gray-500 outline-none p-2">
+    <label for="apellido">Inserte el apellido</label>
+    <input type="text" id="apellido" placeholder="Escriba el apellido" class="w-full border border-gray-500 outline-none  p-2 ">
+    <label for="fecha">Fecha</label>
+    <input type="text" id="fecha" placeholder="Solo colocar el anio. Ej: 2000" class="w-full border border-gray-500 outline-none p-2">
+
+    <button id="btnDatos" class="px-5 py-2 bg-blue-500 border-none text-white rounded-md">Mostrar Datos</button>
+
+    <div class="[&>p>span]:font-medium">
+        <p>Nombre: <span id="mostrarNombre"></span></p>
+        <p>Apellido: <span id="mostrarApellido"></span></p>
+        <p>Edad: <span id="mostrarFecha"></span></p>
+    </div>
+   </div>
+
+     
+
+
+    <script src="script.js"></script>
+</body>
+</html>
